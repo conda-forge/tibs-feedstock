@@ -1,5 +1,5 @@
 context:
-  version: "0.5.6"
+  version: "0.5.7"
 
 package:
   name: tibs
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/tibs/tibs-${{ version }}.tar.gz
-  sha256: ebcd748962f1417fd7bf0416fa7b1af049fd3122bf8bcc6b37a24c48ab06e55b
+  sha256: 173dfbecb2309edd9771f453580c88cf251e775613461566b23dbd756b3d54cb
 
 build:
   number: 0
@@ -30,10 +30,10 @@ requirements:
 tests:
   - python:
       imports:
-      - tibs
+        - tibs
       pip_check: true
   - script:
-    - python -c "from tibs import Tibs, Mutibs"
+      - python -c "from tibs import Tibs, Mutibs"
 
 about:
   homepage: https://github.com/scott-griffiths/tibs
