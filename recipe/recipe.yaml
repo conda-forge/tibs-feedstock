@@ -10,7 +10,7 @@ source:
   sha256: ebcd748962f1417fd7bf0416fa7b1af049fd3122bf8bcc6b37a24c48ab06e55b
 
 build:
-  number: 0
+  number: 1
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - python -m pip install . -vv
@@ -30,10 +30,10 @@ requirements:
 tests:
   - python:
       imports:
-      - tibs
+        - tibs
       pip_check: true
   - script:
-    - python -c "from tibs import Tibs, Mutibs"
+      - python -c "from tibs import Tibs, Mutibs"
 
 about:
   homepage: https://github.com/scott-griffiths/tibs
