@@ -25,6 +25,7 @@ requirements:
     - ${{ stdlib('c') }}
     - cargo-bundle-licenses
     - maturin >=1.11.5,<2.0
+    - pip
   host:
     - maturin >=1.11.5,<2.0
     - python
