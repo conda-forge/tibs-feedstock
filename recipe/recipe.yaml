@@ -1,5 +1,5 @@
 context:
-  version: "0.5.7"
+  version: "0.6.0"
 
 package:
   name: tibs
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/tibs/tibs-${{ version }}.tar.gz
-  sha256: 173dfbecb2309edd9771f453580c88cf251e775613461566b23dbd756b3d54cb
+  sha256: c638200c05b368136f6b81b774f935bab2fb9feda28ffcdbefbf562b421da75e
 
 build:
-  number: 1
+  number: 0
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - python -m pip install . -vv
