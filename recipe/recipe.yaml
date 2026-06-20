@@ -1,5 +1,5 @@
 context:
-  version: "0.9.2"
+  version: "0.10.0"
 
 package:
   name: tibs
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/tibs/tibs-${{ version }}.tar.gz
-  sha256: da78498b939bbba4eb80fe8b9bfc7b5e09d3eed54248a98cbf3ef29169871529
+  sha256: 45ad35bfa92c2f573335f9ae5884d42ecdaf322ee2c23685ed358e11cb49cb7e
 
 build:
   number: 0
