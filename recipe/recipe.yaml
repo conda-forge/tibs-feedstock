@@ -10,7 +10,7 @@ source:
   sha256: ea00bbc48e1eb38dc6903e108998c6834109d68df5a5ef92d0b8d00f6e006ac3
 
 build:
-  number: 0
+  number: 1
   skip: match(python, "<3.11")
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
